@@ -1,0 +1,13 @@
+{
+  "name": "garden",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/client.js --bundle --format=esm --outdir=public/dist",
+    "dev": "esbuild src/client.js --bundle --format=esm --outdir=public/dist --watch --servedir=public"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "typescript": "^5.5.4"
+  }
+}
