@@ -17,37 +17,79 @@
   <body>
 
     
-  <!-- garden + toolbar -->
+    <!-- garden + toolbar -->
+    <!-- This is the garden's final frozen state: the 85 saved actions from
+         garden-history.json have been baked in directly (see
+         scripts/bake-garden.mjs), so this loads instantly with no replay
+         step. -->
     <div class="garden">
-      <div class="plot" id="plot-1" data-plot>
-        <div class="plant">🌻</div>
+      <div class="plot ripen3" id="plot-1" data-plot style="background-color: rgb(19, 81, 48); color: rgb(255, 255, 255);">
+        <div class="plant" style="position: absolute; left: 30.924786948368286%; top: 62.096701581054106%;">🌷</div>
+        <div class="plant" style="left:55.50324970948902%;top:25.78900479773754%;">🌻</div>
+        <div class="plant" style="left:49.82566252871447%;top:37.77708670268579%;">🌻</div>
+        <div class="plant" style="left:5.1822521349117245%;top:74.75251822120663%;">🌹</div>
+        <div class="plant" style="position: absolute; left: 65.05229826576345%; top: 41.57249690575433%;">🌼</div>
+        <div class="plant" style="position: absolute; left: 28.793230392279618%; top: 28.405175350882857%;">🌻</div>
+        <div class="plant" style="left:14.342739127512097%;top:38.37618957757515%;">🌼</div>
+        <div class="plant" style="left:29.55448281728883%;top:78.34144186977889%;">🌹</div>
+        <div class="plant" style="left:84.85232036806948%;top:29.386362270300527%;">🌻</div>
+        <div class="plant" style="left:3.7760960121664446%;top:84.39672225281213%;">🌷</div>
+        <div class="plant" style="left:79.2309702693793%;top:71.01631504592258%;">🌷</div>
+        <div class="plant" style="left:15.049799746234635%;top:76.75721771758151%;">🌷</div>
       </div>
 
-      <div class="plot" id="plot-2" data-plot>
-        <div class="plant">🌿</div>
-        <div class="plant">🌿</div>
-        <div class="plant">🌿</div>
-        <div class="plant">🌿</div>
-        <div class="plant">🌿</div>
-        <div class="plant">🌿</div>
-      </div>
-      
-      <div class="plot" id="plot-3" data-plot>
-        <div class="plant">🍀</div>
-        <div class="plant">🍀</div>
-        <div class="plant">🍀</div>
+      <div class="plot" id="plot-2" data-plot style="background-color: rgb(255, 255, 255);">
+        <div class="plant" style="position: absolute; left: 77.20432950881946%; top: 57.078063995487625%;">🌻</div>
+        <div class="plant" style="left:29.55448281728883%;top:78.34144186977889%;">🌷</div>
+        <div class="plant" style="left:84.85232036806948%;top:29.386362270300527%;">🌷</div>
+        <div class="plant" style="left:3.7760960121664446%;top:84.39672225281213%;">🌷</div>
+        <div class="plant" style="left:79.2309702693793%;top:71.01631504592258%;">🌷</div>
+        <div class="plant" style="left:15.049799746234635%;top:76.75721771758151%;">🌷</div>
       </div>
 
-      <div class="plot" id="plot-4" data-plot>
-        <div class="plant">🌷</div>
+      <div class="plot ripen1" id="plot-3" data-plot style="">
+        <div class="plant replaced" style="position: absolute; left: 73.13266565952881%; top: 51.21581567828092%;">🌹</div>
+        <div class="plant replaced" style="left:55.50324970948902%;top:25.78900479773754%;">🌻</div>
+        <div class="plant replaced" style="left:49.82566252871447%;top:37.77708670268579%;">_</div>
+        <div class="plant replaced" style="left:5.1822521349117245%;top:74.75251822120663%;">_</div>
+        <div class="plant" style="left:14.342739127512097%;top:38.37618957757515%;">🌷</div>
+        <div class="plant" style="left:29.55448281728883%;top:78.34144186977889%;">🌷</div>
+        <div class="plant" style="left:84.85232036806948%;top:29.386362270300527%;">🌷</div>
+        <div class="plant" style="left:3.7760960121664446%;top:84.39672225281213%;">🌷</div>
+        <div class="plant" style="left:79.2309702693793%;top:71.01631504592258%;">🌷</div>
+        <div class="plant" style="left:15.049799746234635%;top:76.75721771758151%;">🌷</div>
       </div>
 
-      <div class="plot" id="plot-5" data-plot>
-        <div class="plant" id="flower">🌼</div>
-        <div class="plant" id="flower">🌷</div>
+      <div class="plot ripen3" id="plot-4" data-plot style="">
+        <div class="plant replaced">🌼</div>
+        <div class="plant replaced" style="position: absolute; left: 14.584936772638724%; top: 58.984738892775525%;">🌻</div>
+        <div class="plant replaced" style="position: absolute; left: 76.15002006034128%; top: 50.31645372868355%;">🌹</div>
+        <div class="plant replaced" style="position: absolute; left: 74.06397579881373%; top: 63.27672505727911%;">🌼</div>
+        <div class="plant replaced" style="left:55.50324970948902%;top:25.78900479773754%;">🌼</div>
+        <div class="plant replaced" style="left:49.82566252871447%;top:37.77708670268579%;">🌹</div>
+        <div class="plant" style="left:5.1822521349117245%;top:74.75251822120663%;">🌼</div>
+        <div class="plant" style="left:14.342739127512097%;top:38.37618957757515%;">🌹</div>
+        <div class="plant" style="position: absolute; left: 30.32967895327621%; top: 70.2038932690072%;">🌼</div>
+        <div class="plant" style="left:29.55448281728883%;top:78.34144186977889%;">🌼</div>
+        <div class="plant" style="left:84.85232036806948%;top:29.386362270300527%;">🌻</div>
+        <div class="plant" style="left:3.7760960121664446%;top:84.39672225281213%;">🌼</div>
+        <div class="plant" style="left:79.2309702693793%;top:71.01631504592258%;">🌷</div>
+        <div class="plant" style="left:15.049799746234635%;top:76.75721771758151%;">🌷</div>
       </div>
 
-      <div class="plot" id="plot-6" data-plot></div>
+      <div class="plot" id="plot-5" data-plot style="background-color: rgb(19, 81, 48); color: rgb(255, 255, 255);">
+        <div class="plant replaced" style="left:15.049799746234635%;top:76.75721771758151%;">🍀</div>
+      </div>
+
+      <div class="plot ripen1" id="plot-6" data-plot style="background-color: rgb(19, 81, 48); color: rgb(255, 255, 255);">
+        <div class="plant" style="left:14.342739127512097%;top:38.37618957757515%;">🌹</div>
+        <div class="plant" style="position: absolute; left: 70.36765871800465%; top: 5.37319852367637%;">🌷</div>
+        <div class="plant" style="left:29.55448281728883%;top:78.34144186977889%;">🌷</div>
+        <div class="plant" style="left:84.85232036806948%;top:29.386362270300527%;">🌷</div>
+        <div class="plant" style="left:3.7760960121664446%;top:84.39672225281213%;">🌷</div>
+        <div class="plant" style="left:79.2309702693793%;top:71.01631504592258%;">🌷</div>
+        <div class="plant" style="left:15.049799746234635%;top:76.75721771758151%;">🌷</div>
+      </div>
     </div>
 
     <div id="colophon">

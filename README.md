@@ -1,8 +1,10 @@
 ## 🎈 garden
 
-This was a [Partykit](https://partykit.io)-powered real-time collaborative garden, made together in a workshop. Partykit's hosted platform [shut down on Oct 23, 2026](https://blog.partykit.io/posts/hosted-platform-shutdown/), so this project is now a frozen static site: it replays the garden's saved history on page load instead of syncing live over a websocket.
+This was a [Partykit](https://partykit.io)-powered real-time collaborative garden, made together in a workshop. Partykit's hosted platform [shut down on Oct 23, 2026](https://blog.partykit.io/posts/hosted-platform-shutdown/), so this project is now a frozen static site: the garden's final state (from [`garden-history.json`](./garden-history.json), 85 saved actions) is baked directly into [`public/index.html`](./public/index.html), so the page loads instantly looking exactly like it did when the workshop ended.
 
-[`src/client.js`](./src/client.js) is the client-side code. On load, it fetches [`public/garden-history.json`](./public/garden-history.json) and replays every past action in order to rebuild the garden's final state. The toolbar and drag-and-drop still work locally, but changes you make aren't saved or shared with anyone else.
+[`src/client.js`](./src/client.js) still sets up the toolbar and drag-and-drop, so dropping a tool onto a plot works the same way it always did — it's just local to your browser now. Nothing is saved or shared with anyone else; reload the page and you're back to the frozen state.
+
+[`scripts/bake-garden.mjs`](./scripts/bake-garden.mjs) is the one-off script that produced the baked HTML in `public/index.html` by replaying `garden-history.json` against the garden's original starting markup, using the same tool code (see the comment at the top of that file for how to re-run it, if the baked state ever needs to be regenerated).
 
 [`src/server.js`](./src/server.js) is kept for reference — it's the old Partykit server code that used to handle WebSocket connections and persist the action history. It's no longer run.
 
